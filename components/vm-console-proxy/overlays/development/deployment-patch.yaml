@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: vm-console-proxy
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/boukhano-tenant/vm-console-proxy/vm-console-proxy@sha256:467f88467b4ebe6dfdccee43f431ffb77de8d502c02e0c59ef18ee405e8165f8
+        name: container-image
+        resources: {}
+status: {}
