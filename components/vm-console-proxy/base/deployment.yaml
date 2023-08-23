@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: vm-console-proxy
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads-stage/boukhano-tenant/vm-console-proxy/vm-console-proxy@sha256:467f88467b4ebe6dfdccee43f431ffb77de8d502c02e0c59ef18ee405e8165f8
         imagePullPolicy: Always
         name: container-image
         ports:
